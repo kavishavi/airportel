@@ -2590,7 +2590,7 @@ this.wordle = this.wordle || {}, this.wordle.bundle =  function(e) {
             return n(t, [{
                 key: "evaluateRow",
                 value: function() {
-                    if (5 === this.tileIndex && !(this.rowIndex >= 6)) {
+                    if (3 === this.tileIndex && !(this.rowIndex >= 6)) {
                         var e, a = this.$board.querySelectorAll("game-row")[this.rowIndex],
                             s = this.boardState[this.rowIndex];
                         if (e = s, !Oa.includes(e) && !Ma.includes(e)) return a.setAttribute("invalid", ""), void this.addToast("Not in word list");
